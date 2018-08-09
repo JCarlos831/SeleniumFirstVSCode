@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "2001cf175b112d7dc43ca6ece834a97fe97e4051"
+    "signature": "67ae027343a7f1751c82cd34b3f9a590b204b376"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,8 @@
       "SeleniumFirstVSCode/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.PageObjects.Core": "3.12.0",
+          "ExcelDataReader": "3.4.0",
+          "ExcelDataReader.DataSet": "3.4.0",
           "Microsoft.NET.Test.Sdk": "15.8.0",
           "NUnit": "3.10.1",
           "NUnit.Console": "3.8.0",
@@ -16,7 +18,8 @@
           "Selenium.Support": "3.14.0",
           "Selenium.WebDriver": "3.14.0",
           "Selenium.WebDriver.ChromeDriver": "2.41.0",
-          "Selenium.WebDriver.GeckoDriver": "0.21.0"
+          "Selenium.WebDriver.GeckoDriver": "0.21.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
         },
         "runtime": {
           "SeleniumFirstVSCode.dll": {}
@@ -31,6 +34,25 @@
           "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {
             "assemblyVersion": "3.12.0.0",
             "fileVersion": "3.12.0.0"
+          }
+        }
+      },
+      "ExcelDataReader/3.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/ExcelDataReader.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        }
+      },
+      "ExcelDataReader.DataSet/3.4.0": {
+        "dependencies": {
+          "ExcelDataReader": "3.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExcelDataReader.DataSet.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
           }
         }
       },
@@ -860,6 +882,14 @@
         }
       },
       "System.Runtime/4.3.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -931,6 +961,25 @@
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {
@@ -1074,6 +1123,20 @@
       "sha512": "sha512-FcwAc221M6DIzy1yiYfed4FfoS6tZsI/Kkb1qGl8ChP9UELMi00VVMrHE+VsOtu9q5BvkoqyD4uXlm/5KJX3/Q==",
       "path": "dotnetseleniumextras.pageobjects.core/3.12.0",
       "hashPath": "dotnetseleniumextras.pageobjects.core.3.12.0.nupkg.sha512"
+    },
+    "ExcelDataReader/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sBDS0csMdok65kEttJbhx2Uu2l8PEEO0SqmuPfPWBMgrM5f9+XyC0C8knkrUcEHAX8jEr11TXWsUfyqZu0NZ5g==",
+      "path": "exceldatareader/3.4.0",
+      "hashPath": "exceldatareader.3.4.0.nupkg.sha512"
+    },
+    "ExcelDataReader.DataSet/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h0OG+X4tLg85XCzidfNmrsH5g2lzaRtGVT5b9uRpQsMyau0d7b/TvLV7qhldq3UoNm3mjSomikMVegeyFffmaA==",
+      "path": "exceldatareader.dataset/3.4.0",
+      "hashPath": "exceldatareader.dataset.3.4.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/15.8.0": {
       "type": "package",
@@ -1502,6 +1565,13 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1564,6 +1634,13 @@
       "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-16EVkWmNnoH3/Yj9c5s5VuLK5Uv/Dnkc3P2kMmnD7wJcUuvcHVvM2IhVJanf2hHRZUitH+cIkPCPHrBoCXc7Rw==",
+      "path": "system.text.encoding.codepages/4.5.0",
+      "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
     },
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",

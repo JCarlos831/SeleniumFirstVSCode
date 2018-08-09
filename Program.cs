@@ -14,6 +14,7 @@ namespace SeleniumFirstVSCode
         [SetUp]
         public void Initialize()
         {
+            // Initialize Driver
             PropertiesCollection.Driver = new ChromeDriver();
 
             // Navigate to Execute Automation demo page
@@ -24,12 +25,19 @@ namespace SeleniumFirstVSCode
         [Test]
         public void ExecuteTest()
         {
-            // Login to application
-            LoginPageObject pageLogin = new LoginPageObject();
-            pageLogin.Login("Juan", "Montoya");
+            ExcelLib.PopulateInCollection("/Users/JuanCMontoya/Desktop/SeleniumTestData.xlsx");
 
-            EAPageObject pageEA = new EAPageObject();
-            pageEA.FillUserForm("JCM", "Juan", "Carlos");
+            // Login to application via Excel sheet
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObject pageEA = pageLogin.Login(ExcelLib.ReadData(1, "UserName"), ExcelLib.ReadData(1, "Password"));
+            pageEA.FillUserForm(ExcelLib.ReadData(1, "Initial"), ExcelLib.ReadData(1, "FirstName"), ExcelLib.ReadData(1, "MiddleName"));
+
+            // // Login to application
+            // LoginPageObject pageLogin = new LoginPageObject();
+            // pageLogin.Login("Juan", "Montoya");
+
+            // EAPageObject pageEA = new EAPageObject();
+            // pageEA.FillUserForm("JCM", "Juan", "Carlos");
 
             //// Title
             //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
