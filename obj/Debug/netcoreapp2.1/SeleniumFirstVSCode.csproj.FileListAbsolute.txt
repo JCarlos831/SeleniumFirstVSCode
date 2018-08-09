@@ -1,0 +1,15 @@
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/Mono.Cecil.dll
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.deps.json
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.runtimeconfig.json
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.runtimeconfig.dev.json
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.dll
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.pdb
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.csprojAssemblyReference.cache
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.csproj.CoreCompileInputs.cache
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.AssemblyInfoInputs.cache
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.AssemblyInfo.cs
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.dll
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.pdb
