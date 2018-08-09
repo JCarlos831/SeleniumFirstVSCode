@@ -7,9 +7,9 @@
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.runtimeconfig.dev.json
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.dll
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/bin/Debug/netcoreapp2.1/SeleniumFirstVSCode.pdb
-/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.csprojAssemblyReference.cache
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.csproj.CoreCompileInputs.cache
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.AssemblyInfoInputs.cache
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.AssemblyInfo.cs
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.dll
 /Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.pdb
+/Users/JuanCMontoya/Projects/vscode/Selenium/SeleniumFirstVSCode/obj/Debug/netcoreapp2.1/SeleniumFirstVSCode.csprojAssemblyReference.cache

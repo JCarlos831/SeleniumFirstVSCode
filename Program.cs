@@ -1,52 +1,55 @@
 ﻿using System;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
-using SeleniumFirstVSCode;
+using OpenQA.Selenium.Chrome;
 
-namespace SeleniumFirst
+namespace SeleniumFirstVSCode
 {
-
-    public class MainClass
+    class Program
     {
-        // Create the reference for our browser
-         IWebDriver driver = new FirefoxDriver("/Users/JuanCMontoya/Desktop");
-
         public static void Main(string[] args)
         {
+            
         }
 
         [SetUp]
         public void Initialize()
         {
-            // Navigate to Google's home page
-            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
-            Console.WriteLine("Opened URL in Chrome");
+            PropertiesCollection.Driver = new ChromeDriver();
+
+            // Navigate to Execute Automation demo page
+            PropertiesCollection.Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
+            Console.WriteLine("Opened URL");
         }
 
         [Test]
         public void ExecuteTest()
         {
-            // Title
-            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
+            // Login to application
+            LoginPageObject pageLogin = new LoginPageObject();
+            pageLogin.Login("Juan", "Montoya");
 
-            // Initial
-            SeleniumSetMethods.EnterText(driver, "Initial", "JCM", "Name");
+            EAPageObject pageEA = new EAPageObject();
+            pageEA.FillUserForm("JCM", "Juan", "Carlos");
 
-            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL(driver, "TitleId", "Id"));
+            //// Title
+            //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
-            Console.WriteLine("The value from Initial is: " + SeleniumGetMethods.GetText(driver, "Initial", "Name"));
+            //// Inital
+            //SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
 
-            // Click
-            SeleniumSetMethods.Click(driver, "Save", "Name");
+            //// Click
+            //SeleniumSetMethods.Click("Save", PropertyType.Name);
+
+            //Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL("TitleId", PropertyType.Id));
+            //Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
         }
 
         [TearDown]
         public void CleanUp()
         {
             // Close browser
-            driver.Close();
-            Console.WriteLine("Closed Browser");
+            PropertiesCollection.Driver.Close();
+            Console.WriteLine("Closed the browser");
         }
     }
 }

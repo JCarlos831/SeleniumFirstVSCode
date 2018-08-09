@@ -3,33 +3,35 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumFirstVSCode
 {
-    public class SeleniumSetMethods
+    public static class SeleniumSetMethods
     {
-        // Enter Text
-        public static void EnterText(IWebDriver driver, string element, string value, string elementType)
+        /// <summary>
+        /// Extended method for entering text in the control
+        /// </summary>
+        /// <param name="element">Element.</param>
+        /// <param name="value">Value.</param>
+        public static void EnterText(this IWebElement element, string value)
         {
-            if(elementType == "Id")
-                driver.FindElement(By.Id(element)).SendKeys(value);
-            if(elementType == "Name")
-                driver.FindElement(By.Name(element)).SendKeys(value);
+            element.SendKeys(value);
         }
 
-        // Click into a button, checkbox, option etc.
-        public static void Click(IWebDriver driver, string element, string elementType)
+        /// <summary>
+        /// Click into a button, Checkbox, option, etc
+        /// </summary>
+        /// <param name="element">Element.</param>
+        public static void Clicks(this IWebElement element)
         {
-            if(elementType == "Id")
-                driver.FindElement(By.Id(element)).Click();
-            if(elementType == "Name")
-                driver.FindElement(By.Name(element)).Click();
+            element.Click();
         }
 
-        // Select a drop down control
-        public static void SelectDropDown(IWebDriver driver, string element, string value, string elementType)
+        /// <summary>
+        /// Selecting a drop down control
+        /// </summary>
+        /// <param name="element">Element.</param>
+        /// <param name="value">Value.</param>
+        public static void SelectDropDown(IWebElement element, string value)
         {
-            if(elementType == "Id")
-                new SelectElement(driver.FindElement(By.Id(element))).SelectByText(value);
-            if(elementType == "Name")
-                new SelectElement(driver.FindElement(By.Name(element))).SelectByText(value);    
+            new SelectElement(element).SelectByText(value);
         }
     }
 }
